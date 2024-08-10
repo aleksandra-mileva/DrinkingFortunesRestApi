@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-fortunes
+      author: aleksandra-mileva
+      changes:
+        - sql:
+            sql:
+              INSERT INTO fortunes (content, author) VALUES 
+              ("You will soon discover that your cocktail has a more exciting social life than you do.", "Aleksandra Mileva"),
+              ("A new drink will be your best friend in the near future. Cheers to that!", "Aleksandra Mileva"),
+              ("Your next cocktail will be as refreshing as your outlook on life. Enjoy the buzz!", "Aleksandra Mileva"),
+              ("Beware of the bartender who insists on adding an extra shot. They know more than you think.", "Aleksandra Mileva"),
+              ("A well-timed toast will bring unexpected joy. Don’t forget to raise your glass!", "Aleksandra Mileva"),
+              ("Your next drink will be filled with happiness. Just don’t ask for a refill on joy!", "Aleksandra Mileva"),
+              ("An interesting conversation is in your future, as long as you can remember it after the third round.", "Aleksandra Mileva"),
+              ("You will soon find yourself in a place where everyone knows your name and your favorite drink.", "Aleksandra Mileva");
+
+
+
+
+

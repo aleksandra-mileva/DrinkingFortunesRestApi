@@ -1,0 +1,29 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-table-fortunes
+      author: aleksandra-mileva
+      changes:
+        - createTable:
+            tableName: fortunes
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+                  autoIncrement: true
+              - column:
+                  name: content
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: author
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+
+
+
+

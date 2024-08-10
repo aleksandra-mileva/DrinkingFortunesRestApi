@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db/changelog/db.changelog-2024-08-10-create-fortunes.yaml
+  - include:
+      file: classpath:/db/changelog/db.changelog-2024-08-10-insert-fortunes.yaml
