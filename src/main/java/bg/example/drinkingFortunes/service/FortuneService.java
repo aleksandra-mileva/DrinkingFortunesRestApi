@@ -12,4 +12,6 @@ public interface FortuneService {
   FortuneResponseDTO createFortune(@Valid FortuneRequestDTO fortuneRequestDTO);
 
   void deleteFortune(Long id);
+
+  FortuneResponseDTO getRandomFortune();
 }

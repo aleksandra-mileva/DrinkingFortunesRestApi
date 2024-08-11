@@ -7,6 +7,7 @@ import bg.example.drinkingFortunes.data.FortuneResponseDTO;
 import bg.example.drinkingFortunes.exception.EntityNotFoundException;
 import bg.example.drinkingFortunes.util.FortuneMapper;
 import java.util.List;
+import java.util.Random;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -36,5 +37,12 @@ public class FortuneServiceImpl implements FortuneService {
         .orElseThrow(() -> new EntityNotFoundException(id, "Fortune"));
 
     fortuneRepository.delete(fortuneEntity);
+  }
+
+  @Override
+  public FortuneResponseDTO getRandomFortune() {
+    List<FortuneEntity> fortunes = fortuneRepository.findAll();
+    int randomIndex = new Random().nextInt(fortunes.size());
+    return fortuneMapper.map(fortunes.get(randomIndex));
   }
 }
