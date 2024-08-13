@@ -10,7 +10,6 @@
 	</parent>
 	<groupId>bg.example</groupId>
 	<artifactId>drinkingFortunes</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>drinkingFortunes</name>
 	<description>REST API for fortunes</description>
 	<url/>
